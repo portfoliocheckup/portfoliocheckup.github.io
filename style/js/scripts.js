@@ -13,12 +13,11 @@ $(document).ready(function() {
 	});
 });
 $(document).ready(function() {
-	$('.show-video').fancybox({
-		openEffect  : 'none',
-		closeEffect : 'none',
-		helpers : {
-			media : {}
-		}
+	$('.fancybox').fancybox({
+  		'autoScale'     	: true,
+		'maxWidth'     : '500px',
+		
+		
 	});
 });
 

@@ -586,7 +586,9 @@ hr {
     background: #499ac8 !important
 }
 
-
+.hidded-content {
+  display: none;
+}
 /*-----------------------------------------------------------------------------------*/
 /*	BANNER BACKGROUND
 /*-----------------------------------------------------------------------------------*/
@@ -1567,7 +1569,7 @@ form h3 {
    body .container {
     padding-left: 30px;
     padding-right: 30px;
-}
+	}
   
 }
 
@@ -1582,7 +1584,7 @@ form h3 {
     position: relative;
     left: 15px;
     top: 0;
-}
+	}
 }
 
 
