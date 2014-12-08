@@ -4,12 +4,11 @@
 /*-----------------------------------------------------------------------------------*/
 $(document).ready(function() {
 	$(".show-content").fancybox({
-  
-		'height'			: '75%',
-    'autoScale'     	: true,
-    'transitionIn'		: 'none',
+  		'height'			: '75%',
+		'autoScale'     	: true,
+		'transitionIn'		: 'none',
 		'transitionOut'		: 'none',
-    'width' : '500',
+		'width' : '500',
 		'type'				: 'iframe'
 	});
 });
