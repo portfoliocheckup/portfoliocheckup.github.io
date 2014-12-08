@@ -16,7 +16,7 @@ $(document).ready(function() {
 	$('.fancybox').fancybox({
   		'autoScale'     	: true,
 		'maxWidth'     : '500px',
-		
+		'padding'     : 30
 		
 	});
 });
