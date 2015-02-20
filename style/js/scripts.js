@@ -4,20 +4,21 @@
 /*-----------------------------------------------------------------------------------*/
 $(document).ready(function() {
 	$(".show-content").fancybox({
-  		'height'			: '75%',
-		'autoScale'     	: true,
-		'transitionIn'		: 'none',
-		'transitionOut'		: 'none',
-		'width' : '500',
-		'type'				: 'iframe'
+		maxWidth	: 600,
+		maxHeight	: 600,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none',
+    padding: 30
 	});
 });
 $(document).ready(function() {
-	$('.fancybox').fancybox({
-  		'autoScale'     	: true,
-		'maxWidth'     : '500px',
-		'padding'     : 30
-		
+	$('.show-video').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
 	});
 });
 
@@ -99,4 +100,129 @@ $(document).ready(function () {
         activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
         zIndex: 1001 // Z-Index for the overlay
     });
+});
+/*-----------------------------------------------------------------------------------*/
+/*	TABS
+/*-----------------------------------------------------------------------------------*/
+$(document).ready(function () {
+    $('.tabs.tabs-top').easytabs({
+        animate: true,
+        animationSpeed: 1000,
+        updateHash: false,
+        cycle: 3500
+    });
+});
+/*-----------------------------------------------------------------------------------*/
+/*	MENU
+/*-----------------------------------------------------------------------------------*/
+$(document).ready(function () {
+    $('.js-activated').dropdownHover({
+        instantlyCloseOthers: false,
+        delay: 0
+    }).dropdown();
+
+
+    $('.dropdown-menu a, .social .dropdown-menu, .social .dropdown-menu input').click(function (e) {
+        e.stopPropagation();
+    });
+
+});
+
+/*-----------------------------------------------------------------------------------*/
+/*	HOME SLIDER
+/*-----------------------------------------------------------------------------------*/
+$(document).ready(function () {
+    var revapi;
+    jQuery(document).ready(function () {
+
+        revapi = jQuery('.fullwidthbanner').revolution({
+            delay: 9000,
+            startwidth: 1170,
+            startheight: 450,
+            hideThumbs: 200,
+            fullWidth: "on"
+        });
+
+    });
+});
+
+/*-----------------------------------------------------------------------------------*/
+/*	DATA REL
+/*-----------------------------------------------------------------------------------*/
+$('a[data-rel]').each(function () {
+    $(this).attr('rel', $(this).data('rel'));
+});
+
+/*-----------------------------------------------------------------------------------*/
+/*	FORM
+/*-----------------------------------------------------------------------------------*/
+jQuery(document).ready(function ($) {
+    $('.forms').dcSlickForms();
+});
+$(document).ready(function () {
+    $('.comment-form input[title], .comment-form textarea').each(function () {
+        if ($(this).val() === '') {
+            $(this).val($(this).attr('title'));
+        }
+
+        $(this).focus(function () {
+            if ($(this).val() == $(this).attr('title')) {
+                $(this).val('').addClass('focused');
+            }
+        });
+        $(this).blur(function () {
+            if ($(this).val() === '') {
+                $(this).val($(this).attr('title')).removeClass('focused');
+            }
+        });
+    });
+});
+
+/*-----------------------------------------------------------------------------------*/
+/*	STICKY NAVIGATION
+/*-----------------------------------------------------------------------------------*/
+$(document).ready(function () {
+
+    var menu = $('.navbar'),
+        pos = menu.offset();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > pos.top + menu.height() && menu.hasClass('default') && $(this).scrollTop() > 150) {
+            menu.fadeOut('fast', function () {
+                $(this).removeClass('default').addClass('fixed').fadeIn('fast');
+            });
+        } else if ($(this).scrollTop() <= pos.top + 150 && menu.hasClass('fixed')) {
+            menu.fadeOut(0, function () {
+                $(this).removeClass('fixed').addClass('default').fadeIn(0);
+            });
+        }
+    });
+
+});
+$(document).ready(function() {
+	$('.offset').css('padding-top', $('.navbar').height() + 'px');
+       
+}); 
+$(window).resize(function() {
+	$('.offset').css('padding-top', $('.navbar').height() + 'px');        
+}); 
+
+$("#zFormer").submit(function() {
+
+    var url = "https://zapier.com/hooks/catch/oh5zfi"; // the script where you handle the form input.
+
+    $.ajax({
+           type: "POST",
+           url: url,
+           data: $("#zFormer").serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+               $(".contact-info .alert").show().toggleClass("alert-success").html("Your Message was sent succesfully"); // show response from the php script.
+           },
+           error: function(){
+             $(".contact-info .alert").show().toggleClass("alert-danger").html("There was an error while trying to submit you message. Please Try again.");
+           }
+         });
+
+    return false; // avoid to execute the actual submit of the form.
 });
