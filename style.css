@@ -44,7 +44,7 @@ body {
     /*background-color: #084e89;*/
     color: #444444;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .body-wrapper {
     background-color: #fbfbfc;
@@ -1233,7 +1233,6 @@ form#get-started input.btn-submit {
 }
 
 .col-services p {
-  color: #555555;
   font-size: 15px;
   line-height: 30px;
   padding: 0 20px 0 0 ;
@@ -2455,9 +2454,10 @@ form h3 {
     zoom: 1;
     *display: inline;
     margin-right: 3px;
+    vertical-align: top;
 }
 .tabs-top .tab a {
-    padding: 9px 20px;
+    padding: 9px 0px;
     display: block;
     color: #084e89;
     font-size: 13px;
@@ -2494,9 +2494,13 @@ form h3 {
 }
 .tab-block .text-col p,
 .tab-block .text-col ol li{
-  color: #555555;
   line-height: 33px;
   font-size: 15px;
+}
+
+.tab-block .image-col img{
+  max-width: 100%;
+  display: block;
 }
 /*-----------------------------------------------------------------------------------*/
 /*	BOX LAYOUT
@@ -2661,6 +2665,12 @@ form h3 {
 	        opacity: 1
 	    }
 	}
+}
+@media (max-width: 1040px) {
+  .tabs-top .tab a {
+    font-size: 12px;
+    vertical-align: top;
+  }
 }
 @media (max-width: 991px) { 
 	.navbar.black .dropdown-menu,
@@ -2867,6 +2877,11 @@ form h3 {
     font-size: 17px;
     line-height: 35px;
   }
+  .tabs-top .tab a {
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: top;
+  }
 }
 @media (max-width: 969px) { 
 	.yamm .dropdown.yamm-fullwidth .dropdown-menu {
@@ -3053,14 +3068,14 @@ form h3 {
 	    display: none
 	}
 	.tab {
-	    display: block !important;
-	    margin: 0 !important;
+	    /*display: block !important;
+	    margin: 0 !important;*/ 
 	}
 	.tabs-top .tab {
-	    margin-bottom: 8px !important
+	    margin-bottom: 0px !important;
 	}
 	.tabs-top .etabs {
-	    margin-bottom: -8px
+	   /* margin-bottom: -8px*/
 	}
 	.services .etabs,
 	.services.tabs .panel-container {
@@ -3331,6 +3346,20 @@ form h3 {
    #video .service-icon img {
     width: 80px;
   }
+  .tab-block .text-col h2 {
+    font-size: 23px;
+    margin: 0 0 15px;
+  }
+  .tab-block .text-col p, .tab-block .text-col ol li {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .tab-block .image-col img {
+    margin-top: 25px;
+  }
+  .tp-caption.lite.small.banner-list {
+    font-size: 18px;
+  }
   
 }
 @media (max-width: 1100px) {
@@ -3410,6 +3439,7 @@ form h3 {
   .tony-disclosure p {
     font-size: 11px;
   }
+
 }
 @media (min-width: 992px) and  (max-width: 1180px) {
   .navbar-nav > li {
@@ -3475,19 +3505,17 @@ form h3 {
     line-height: 25px !important;
   }
    /* Our Team Banner */  
-  .homepage .revolution h2 {
-    font-size: 25px !important;
-  }
+  
   .homepage .revolution div.caption {
-   font-size: 14px !important;
+    font-size: 14px !important;
     line-height: 20px !important;    
   }
   .homepage .revolution .first-slide div.caption {
     margin-top: -4px;
   }
   .homepage .revolution div.caption #book_preview {
-     width: 50px !important;
-     margin-top: 15px;
+    width: 50px !important;
+    margin-top: 0px;
     margin-left: 50px;
   }
   .private-wealth .revolution div.caption {
@@ -3505,7 +3533,47 @@ form h3 {
     max-width: 60% !important;
     float: right;
   }
+  .tab-block .text-col h2 {
+    font-size: 23px;
+    margin: 0 0 15px;
+  }
+  .tab-block .text-col p, .tab-block .text-col ol li {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .tab-block .image-col img {
+    margin-top: 25px;
+  }
+  .tabs-top .tab {
+    width: 100%;
+    text-align: left;    
+  }
   
+  .tabs-top .tab a {
+    padding: 5px 0 5px 10px;
+  }
+  .homepage .revolution h2 {
+    font-size: 17px !important;
+  }
+  
+  .revolution .second-slide h2.caption {
+    margin-left: -25px !important;
+  }
+  
+  .second-slide div.caption  {
+    text-align: left !important;
+  }
+  
+}
+
+@media (max-width: 540px) {
+  .homepage .revolution h2 {
+    font-size: 17px !important;
+  }
+  .homepage .revolution div.caption {
+    font-size: 13px !important;
+    line-height: 20px !important;    
+  }
 }
 
 @media (max-width: 480px) {
