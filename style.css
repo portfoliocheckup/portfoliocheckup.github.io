@@ -3618,7 +3618,7 @@ form h3 {
 }
   #video p {
     font-size: 13px;
-     line-height: 24px;
+    line-height: 24px;
   }
   #video .service-icon {
     margin-top: 10px;
@@ -3686,6 +3686,12 @@ form h3 {
   .homepage .revolution h2 {
     font-size: 20px !important;
   }
+  .homepage .revolution .first-slide h2 {
+    font-size: 15px !important;
+  }
+  .revolution .second-slide h2.caption {
+    margin-left: -15px !important;
+  }
   .homepage .revolution div.caption {
     font-size: 13px !important;
     line-height: 19px !important;
@@ -3699,7 +3705,7 @@ form h3 {
   }
   .homepage .revolution div.caption #book_preview {
     margin-left: 50px;
-    margin-top: 35px;
+    margin-top: 15px;
     width: 200px;
   }
   .private-wealth .revolution div.caption {
@@ -3721,6 +3727,16 @@ form h3 {
   .tony-disclosure {
     bottom: 10px;
     top: auto !important;
+  }
+  .text-col {
+    width: 100% !important;
+  }
+  .tab-block .text-col h2 {
+    font-size: 17px;
+  }
+  .tab-block .text-col p, .tab-block .text-col ol li {
+    font-size: 13px;
+    line-height: 25px;
   }
 }
 
