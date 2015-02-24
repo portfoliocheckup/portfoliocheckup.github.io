@@ -3815,3 +3815,17 @@ form h3 {
 .italic {
   font-style: italic;
 }
+
+.modal-backdrop {
+    z-index: 8001
+}
+#samplePortfolioModal {
+    z-index: 8002;
+}
+#samplePortfolioModal .modal-dialog {
+    width: 1257px;
+}
+#samplePortfolioModal .modal-dialog img {
+    height: 2627px;
+    width: 1193px;
+}
