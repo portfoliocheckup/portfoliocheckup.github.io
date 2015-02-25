@@ -1091,6 +1091,10 @@ hr {
   width: 100%;
   height: auto;
 }
+ .row img {
+  max-width: 100%;
+  height: auto;
+}
 .image-banner2 .container.inner {
   bottom: 0;
   left: 0;
@@ -3439,6 +3443,11 @@ form h3 {
   .tony-disclosure p {
     font-size: 11px;
   }
+  #sample-portfolio {
+    font-size: 12px;
+    margin-top: 30px;
+    padding: 10px;
+}
 
 }
 @media (min-width: 992px) and  (max-width: 1180px) {
@@ -3563,6 +3572,17 @@ form h3 {
   .second-slide div.caption  {
     text-align: left !important;
   }
+  .section-title {
+    font-size: 22px;
+  }
+  .private-wealth .col-services p {
+    padding: 0 2%;
+  }
+  #sample-portfolio {
+    font-size: 11px;
+    margin-top: 10px;
+    padding: 10px;
+  }
   
 }
 
@@ -3577,6 +3597,11 @@ form h3 {
 }
 
 @media (max-width: 480px) {
+  .navbar .container,
+	.container {
+	    padding-right: 10px;
+	    padding-left: 10px;
+	}
   body {
     font-size: 12px;
   }
@@ -3697,7 +3722,7 @@ form h3 {
     line-height: 19px !important;
     max-width: 100% !important;
   }
-  .homepage .fullwidthbanner-container .fullwidthbanner {
+  .homepage .fullwidthbanner-container .fullwidthbanner, .our-team .fullwidthbanner-container .fullwidthbanner {
     min-height: 250px;
   }
   .homepage .revolution div.caption .btn-green {
@@ -3738,6 +3763,14 @@ form h3 {
     font-size: 13px;
     line-height: 25px;
   }
+  #sample-portfolio {
+    font-size: 11px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .services .revolution a.get-started {
+    margin-top: 25px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -3775,6 +3808,12 @@ form h3 {
     font-size: 13px !important;
     white-space: normal !important;
   }
+  .homepage .revolution .first-slide h2 {
+    font-size: 12px !important;
+  }
+  .section-title {
+    font-size: 20px;
+  }
 }
 @media (max-width: 360px) {
   .homepage .fullwidthbanner-container.revolution {
@@ -3811,7 +3850,27 @@ form h3 {
   }
   .homepage .revolution div.caption .btn-green {
     margin-top: 70px;
+  }
+  #sample-portfolio {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .services .revolution a.get-started {
+    margin-top: 15px;
+    font-size: 11px;
+  }
 }
+
+@media (max-width: 320px) {
+   .homepage .revolution .first-slide h2 {
+    font-size: 11px !important;
+  }
+  .header-info {
+    font-size: 9px;
+  }
+   #sample-portfolio {
+    font-size: 9px;
+   }
 }
 
 
