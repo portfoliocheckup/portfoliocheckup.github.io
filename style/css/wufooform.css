@@ -7,11 +7,15 @@
 	font-weight: 500;
 	text-transform: uppercase;
 } 
+.wufoo ul li label.focused
 .wufoo ul li label {
 	color: #666;
 	font-size: 14px; 
 	font-weight: 500;
 	text-transform: uppercase;
+}
+.wufoo ul li label.focused {
+	background: none;
 }
 .wufoo ul li span input, .wufoo ul li div input {
 	border: 1px solid #dbdbdb;
@@ -20,9 +24,12 @@
 	line-height: 1.2;
 	padding: 7px 12px;
 }
-.wufoo ul li span input#Field1 {}
-.wufoo ul li span input#Field2 {}
-.wufoo ul li div input#Field3 {}
+.wufoo ul li span input#Field1, .wufoo ul li span input#Field2 {
+	width: 175px
+}
+.wufoo ul li div input#Field3 {
+	width: 380px
+}
 .wufoo ul li.buttons div input.btTxt {
     background-color: #428bca;
 	background: linear-gradient(to bottom, #4ab2e3 0px, #3ea4dd 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
