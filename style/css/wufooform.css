@@ -14,7 +14,7 @@
 	font-weight: 500;
 	text-transform: uppercase;
 }
-.wufoo ul li label.focused {
+.wufoo ul li.focused {
 	background: none;
 }
 .wufoo ul li span input, .wufoo ul li div input {
