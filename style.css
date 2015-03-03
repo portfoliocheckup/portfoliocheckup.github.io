@@ -1985,6 +1985,9 @@ textarea {
     min-height: 150px;
     resize: vertical;
 }
+.habla_window_div_base textarea {
+    min-height: 20px;
+} 
 .btn-submit {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
