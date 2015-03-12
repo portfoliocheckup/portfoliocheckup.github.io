@@ -26,11 +26,11 @@ iframe {
     border: none
 }
 ::selection {
-    background: #00bc9c; /* Safari */
+    background: #60ccf6; /* Safari */
     color: #ffffff;
 }
 ::-moz-selection {
-    background: #00bc9c; /* Firefox */
+    background: #60ccf6; /* Firefox */
     color: #ffffff;
 }
 /*-----------------------------------------------------------------------------------*/
@@ -409,7 +409,7 @@ hr {
     padding: 15px 0;
 }
 .navbar-header {
-    background: #ffffff;
+    background: #29333a;
     padding: 0;
 }
 .navbar.black .navbar-header {
@@ -439,7 +439,7 @@ hr {
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #084E89; /*#506a85;*/
+    color: #ffffff; /*#506a85;*/
     padding: 12px 15px;
     font-family: 'Montserrat', sans-serif;
     border-bottom: 2px solid transparent;
@@ -456,13 +456,13 @@ hr {
 }
 .navbar-nav > li > a.active {
     border-bottom: 2px solid #60CCF6 /*#00bc9c */ !important;
-    color: #222426;
+    color: #60ccf6;
     padding: 12px 0px;
     margin-left: 15px;
     margin-right: 15px;
 }
 .navbar-nav > li > a.active:hover {
-    color: #222426;
+    color: #60ccf6;
 }
 .nav > li > a:focus {
 	background: none;
@@ -505,7 +505,7 @@ hr {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    border-top: 2px solid #60CCF6;
+    border-top: 2px solid #ffffff;
 }
 .navbar.black .dropdown-menu {
 	background: #292929;
@@ -690,8 +690,8 @@ hr {
     width: 100%;
 }
 .navbar.basic.fixed .navbar-header {
-  background: /*rgba(255,255,255,.9)*/ #ffffff;
-  border-bottom: 1px solid #ccc;
+  background: /*rgba(255,255,255,.9)*/ #29333a;
+ /* border-bottom: 1px solid #ccc;*/
 }
 .navbar.basic.fixed .navbar-brand {
     padding: 0;
@@ -2755,7 +2755,7 @@ form h3 {
 	}
 	.navbar.basic .btn.responsive-menu {
 	    margin: 20px 0 0;
-      background: #506a85;
+      background: #084e89;
 	}
   .navbar.basic .navbar-nav {
 	    width: 100%;
@@ -2779,7 +2779,7 @@ form h3 {
   }
   .navbar-nav > li.last > a {
     padding: 10px !important;
-    background: #506a85;
+    background: #084e89;
     display: inline-block;
     margin: 10px 0;
   }
