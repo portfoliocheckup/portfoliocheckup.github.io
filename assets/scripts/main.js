@@ -30,4 +30,13 @@ $(document).ready(function(){
     $("#myModal").on('hidden.bs.modal', function (e) {
         $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
     });
+
+    if(window.location.hash == '#demo-video'){
+        $('#play').click();
+    }
+    
+    var current_domain = document.domain.replace('www.','');    
+    if(document.domain == 'strongholdfinancial.com'){
+        $('#warning').click();
+    }
 });
