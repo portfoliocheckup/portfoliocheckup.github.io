@@ -8,28 +8,23 @@ layout: signup
     </div>
     <div class="two-col clearfix">
         <div class="col-md-6">
-            <form action="https://app.portfoliocheckup.com/signup" method="POST" class="form-horizontal" role="create">
-                <div class="form-group">
-                    <input type="text" name="firstName" value="" placeholder="First Name" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="lastName" value="" placeholder="Last Name" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="emailAddress" value="" placeholder="Email Address" class="form-control"/>
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" placeholder="Password" class="form-control"/>
-                </div>
-                <div class="form-group buttons-set">
-                    <button type="submit" class="btn btn-primary">Register</button>
-                    <div class="alt-option">
-                        <span>Already have an account?</span>
-                        <a href="https://app.portfoliocheckup.com/login">Log in now</a>
+			<form action="https://app.portfoliocheckup.com/login" method="POST" role="form">
+				<input type="hidden" name="redirectLocation" value="/advisors" />
+				<div class="form-group">
+					<input type="text" name="emailAddress" value="" class="form-control" placeholder="Email Address" autofocus="" />
+				</div> 
+				<div class="form-group">
+					<input type="password" name="password" class="form-control" placeholder="Password" />
+				</div>
+				<div class="form-group buttons-set">
+					<button type="submit" class="btn btn-primary">Log in</button>
+					<div class="alt-option">
+						<span class="signup">or <a href="https://app.portfoliocheckup.com/signup">Sign up</a></span><br>
+                        <a href="https://app.portfoliocheckup.com/password/forgot">Forget your password?</a>
                     </div>
-                </div>
-                <p class="form-close">By clicking register, you agree to the <a href="https://static.strongholdfinancial.com/compliance/portfoliocheckup/Terms_of_Use.pdf" target="_blank">Terms&nbsp;of&nbsp;Use</a> and <a href="https://static.strongholdfinancial.com/compliance/portfoliocheckup/Privacy_Policy.pdf" target="_blank">Privacy Policy</a>, and acknowledge that you have read and understood our disclosure brochure, which can be accessed here: <a href="https://static.strongholdfinancial.com/compliance/portfoliocheckup/Disclosure_Brochure.pdf" target="_blank">FormADV2</a>.</p>
-            </form>
+				</div>
+				
+			</form>
         </div>
         <div class="col-md-6 center">
             <span id="video-text">You Deserve a Portfolio CheckUp</span>
